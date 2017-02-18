@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <ul th:each="episode : ${episodeList}">
+        <li>
+            <a th:href="${episode.videoUrl}" th:text="${episode.title}" href="#">
+                title
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
